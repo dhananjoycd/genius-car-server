@@ -15,7 +15,7 @@ app.get('/', (req,res)=>{
     res.send('server response korce')
 })
 
-//database Connection 
+//database Connection done
 
 const uri = `mongodb+srv://${process.env.GENIUS_USER}:${process.env.GENIUS_PASS}@drn.cozpn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
